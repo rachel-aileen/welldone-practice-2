@@ -1,5 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+html,
 body {
-  background-color: pink;
+  background-color: white;
   margin: 0;
   padding: 0;
+}
+
+:root {
+  --primary-color: #122223;
+  --secondary-color: #F6F2F2;
+  --tertiary-color: #81B59F;
+  --accent-color: #F2FEDC;
+  --semantic-color: #F0C7B9;
+  --attention-color: #E03D5A;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  background-color: var(--secondary-color);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--primary-color);
+}
+
+.navbar .navigation {
+  position: relative;
+}
+
+.navbar .navigation .menu {
+  background-color: var(--tertiary-color);
+  min-width: 75%;
+  height: 100vh;
+  top: 0;
+  padding-top: 5%;
+  transition: 0.5s ease;
+}
+
+.navbar .navigation .menu .menu-item {
+  padding-top: 7%;
+  list-style: none;
+}
+
+.navbar .navigation .menu .menu-item a {
+  color: var(--secondary-color);
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-left: 5%;
+}
+
+.navbar .navigation .menu.active {
+  visibility: visible;
+  margin: 0;
+  right: 0;
+}
+
+.navbar .navigation .menu.hidden {
+  right: -100%;
+  visibility: visible;
+  margin: 0;
+}
+
+.menu-item>a.active {
+  color: var(--primary-color) !important;
+}
+
+.menu {
+  position: fixed;
+}
+
+.menuBtn {
+  background-color: transparent !important;
+}
+
+.menuIcon {
+  font-size: 2em !important;
+  color: black !important;
 }
