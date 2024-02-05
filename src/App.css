@@ -11,6 +11,7 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 
 }
 
@@ -123,7 +124,21 @@ body {
   background-color: transparent !important;
 }
 
+.menuBtn:focus {
+  background: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: none !important;
+}
+
 .menuIcon {
   font-size: 2em !important;
   color: black !important;
+}
+
+.menuIcon:focus {
+  background: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background-color: none !important;
 }
